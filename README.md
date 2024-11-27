@@ -8,6 +8,7 @@ Pegmus é uma extensao para salvar playlist do youtube
 
 ## Melhorias pendentes
 
+- ⏳ Salvar nome da playlist
 - ⏳ Adicionar todas as musicas (atualmente salva somente carregadas)
 - ⏳ Não salvar recomendações  da playlist
 - ⏳ Adicionar suporte para urls https://www.youtube.com/watch?.....&list=....
