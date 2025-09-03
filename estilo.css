@@ -10,10 +10,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-span {
-    color: var(--cor-clara);
-}
-
 body {
     border-radius: var(--borda-raio);
     background-color: var(--cor-escura);
@@ -28,8 +24,12 @@ body {
     min-height: 80px;
 }
 
+#mensagem {
+    color: var(--cor-clara);
+    white-space: pre-wrap;
+}
 
-button {
+#pegar_musicas {
     border-radius: var(--borda-raio);
     border: solid 2px var(--cor-clara);
     background-color: var(--cor-clara);
@@ -37,9 +37,15 @@ button {
     padding: var(--espaco-linha);
 }
 
-button:hover {
+#pegar_musicas:hover {
     cursor: pointer;
     color: var(--cor-clara);
     border-color: var(--cor-azul);
     background-color: var(--cor-escura);
+}
+
+
+#pegar_musicas:disabled,
+#pegar_musicas[disabled]{
+  display: none;
 }
