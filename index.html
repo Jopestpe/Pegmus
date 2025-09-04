@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="pegmus.svg" />
+    <title>Pegmus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #000;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .recipiente {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 1);
+            overflow: hidden;
+        }
+
+        .cabecalho {
+            background-color: #000;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px auto;
+            display: block;
+        }
+
+        .cabecalho h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .cabecalho p {
+            font-size: 1.1rem;
+        }
+
+        .conteudo {
+            background-color: #111111;
+            padding: 40px;
+            color: #fff;
+        }
+
+        .secao {
+            margin-bottom: 40px;
+        }
+
+        .secao h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #4267B2;
+            padding-bottom: 10px;
+        }
+
+        .secao-download {
+            background-color: #222222;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid #fff;
+        }
+
+        .botao-download {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 10px;
+        }
+
+        .botao-download:hover {
+            background-color: #218838;
+        }
+
+        .botao-github {
+            background-color: #333;
+        }
+
+        .botao-github:hover {
+            background-color: #555;
+        }
+
+        .passos-instalacao {
+            background-color: #333;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+
+        .passos-instalacao ol {
+            margin-left: 20px;
+        }
+
+        .passos-instalacao li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .bloco-codigo {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+        }
+
+        .recursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .recurso {
+            background-color: #333;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+
+        .recurso h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .aviso {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .aviso strong {
+            color: #d63031;
+        }
+
+        .ideias-futuras {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #fff;
+        }
+
+        .ideias-futuras ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .cabecalho h1 {
+                font-size: 2rem;
+            }
+            
+            .conteudo {
+                padding: 20px;
+            }
+            
+            .recursos {
+                grid-template-columns: 1fr;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="recipiente">
+        <div class="cabecalho">
+            <img src="pegmus.svg" alt="Logo Pegmus" class="logo">
+            <h1>Pegmus</h1>
+            <p><strong>Peg</strong>ar <strong>mús</strong>icas - Salve suas playlists do YouTube</p>
+        </div>
+
+        <div class="conteudo">
+            <div class="secao">
+                <h2>📥 Baixar</h2>
+                <div class="secao-download">
+                    <h3>Baixe a extensão via Github</h3>
+                    <p>Pegmus não está na loja do Firefox</p>
+                    <br>
+                    <a href="https://github.com/Jopestpe/Pegmus/archive/refs/tags/0.0.2.zip" class="botao-download">
+                        📦 Baixar Versão 0.0.2
+                    </a>
+                    <a href="https://github.com/Jopestpe/Pegmus" class="botao-download botao-github">
+                        🔗 Ver no GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2>📋 Como Instalar</h2>
+                <div class="passos-instalacao">
+                    <ol>
+                        <li>Baixe o arquivo da extensão</li>
+                        <li>Descompacte em uma pasta</li>
+                        <li>Abra o Firefox e digite:</li>
+                    </ol>
+                    <div class="bloco-codigo">about:debugging#/runtime/this-firefox</div>
+                    <ol start="4">
+                        <li>Clique em "<strong>Carregar extensão temporária…</strong>"</li>
+                        <li>Escolha o arquivo <code>manifest.json</code></li>
+                        <li>Pronto! A extensão foi instalada</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2>✨ O que faz</h2>
+                <div class="recursos">
+                    <div class="recurso">
+                        <h3>🎯 Simples</h3>
+                        <p>Clique em um botão e salve sua playlist</p>
+                    </div>
+                    <div class="recurso">
+                        <h3>💾 Funciona offline</h3>
+                        <p>Não precisa de internet depois de instalar</p>
+                    </div>
+                    <div class="recurso">
+                        <h3>📊 Arquivo JSON</h3>
+                        <p>Salva as informações em formato organizado</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2>🚨 Importante</h2>
+                <div class="aviso">
+                    <strong>Atenção:</strong> Só funciona em páginas do tipo:<br>
+                    <code>https://www.youtube.com/playlist?list=</code>
+                </div>
+            </div>
+
+            <div class="secao">
+                <h2>💡 Sobre</h2>
+                <p>Pegmus foi criado para ser uma forma <strong>simples</strong> de salvar suas playlists do YouTube no seu computador. A extensão pega os nomes das músicas, artistas e links, salvando tudo em um arquivo organizado.</p>
+                
+                <p>Pode ajudar ou reportar problemas no GitHub.</p>
+
+                <div class="ideias-futuras">
+                    <h3>🔮 Próximas melhorias</h3>
+                    <ul>
+                        <li>⏳ Funcionar no YouTube Music</li>
+                        <li>🔄 Salvar em outros formatos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
